@@ -11,9 +11,9 @@ on:
       - "**/README.md"
 env:
   BUILD_NUMBER: ${{ github.run_number }}
-  PROJECT_PATH: "ConnectionLogs.csproj"
+  PROJECT_PATH: "ConnectionLogs/ConnectionLogs.csproj"
   PROJECT_NAME: "ConnectionLogs"
-  OUTPUT_PATH: "./ConnectionLogs"
+  OUTPUT_PATH: "./release"
 
 jobs:
   build:
