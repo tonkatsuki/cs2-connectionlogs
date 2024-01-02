@@ -22,12 +22,12 @@ internal class DiscordClass
 
         if (!standardConfig.PrintIpToDiscord)
         {
-            messageBuilder.Append($" {connectTypeString} {serverName}");
+            messageBuilder.Append($" {connectTypeString} <{serverName}>");
             return messageBuilder.ToString();
         }
 
         messageBuilder.Append($" [{player.IpAddress.Split(':')[0]}](<https://geoiplookup.net/ip/{player.IpAddress.Split(':')[0]}>)");
-        messageBuilder.Append($" {connectTypeString} {serverName}");
+        messageBuilder.Append($" {connectTypeString} <{serverName}>");
 
         return messageBuilder.ToString();
     }
